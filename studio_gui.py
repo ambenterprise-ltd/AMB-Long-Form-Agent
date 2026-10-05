@@ -1340,8 +1340,8 @@ class IslamicReelsStudio(ctk.CTk):
 
         def play_test_voice():
             voice_actor = lf_voice_actor_var.get()
-            profile_lang = self.get_active_setting("lf_main_language", "Russian")
-            print(f"[SYSTEM] ▶ Playing voice test for: '{voice_actor}' (Language: {profile_lang})")
+            profile_lang = lf_main_lang_var.get()
+            print(f"'{voice_actor}' (Language: {profile_lang})")
             
             def play_thread():
                 try:
